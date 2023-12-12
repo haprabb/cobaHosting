@@ -1,0 +1,128 @@
+#atas{
+    background: #023047;
+    top: 0;
+    width: auto;
+    height: 100px;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px;
+    position: sticky;
+    
+}
+#atas img{
+    margin: 20px 20px;
+    width: auto;
+    z-index: 1;
+}
+#atas ul{
+    margin-top: 20px;
+    float: right;
+    padding: 0 0px;
+    position: relative;
+    list-style: none;
+    width: 730px;
+    margin-right: 50px;
+    
+}
+#atas ul::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#atas ul li{
+    margin-right:20px ;
+    padding: 20px 10px 10px 10px;
+    float: left;
+    
+}
+#atas ul li:hover{
+    background: transparent;
+    border-radius: 20px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#atas ul li a{
+    display:block;
+    color: white;
+    text-decoration: none;
+    font-family: 'Gabarito', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#atas ul li:hover a{
+    color: white;
+    text-decoration: underline red;
+
+}
+
+#atas ul li:hover > ul {
+    display: block;
+}
+
+#search_bar{
+    position:relative;
+    display: flex;
+    background-color: white;
+    margin: 20px 20px 20px 20px;
+    padding-right: 20px;
+    padding: 20px;
+    border-radius: 32px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 100px 0px;
+    float: right;
+}
+#search_bar input{
+    border: 0;
+    border-color: white;
+    background-color: transparent;
+    font-size: 16px;
+    width: 0;
+    transition: 0.8s;
+}
+#search_bar:hover input{
+    width: 200px;
+    border-color: white;
+
+}
+#search_bar button{
+    padding: 10px;
+    border: 0;
+    background-color: purple;
+    color: white;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.new img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid rgba(100, 100, 111, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.new img:hover {
+    transform: scale(1.1);
+}
+
+.new .row {
+    display: flex;
+    align-items: stretch; 
+}
+
+.new .img-fluid {
+    height: 100%; 
+    object-fit: cover; 
+}
